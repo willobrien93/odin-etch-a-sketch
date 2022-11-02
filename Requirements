@@ -12,4 +12,24 @@ Requirements
             Changing color 
                 Add class
                 Change style attribute
-        
+        Settings Popup
+            Button that triggers Popup
+                button element
+            Request # of squares per side
+                prompt function
+                (Max 100x100)
+            
+
+Step 1 
+    HTML + JavaScript
+    HTML
+        Title
+        Grid (generated in JavaScript)
+            
+
+Step 2
+    Add CSS
+    Add Dynamic drawing
+        Event Listener (hover)
+        Add class
+    
