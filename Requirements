@@ -1,0 +1,15 @@
+Requirements
+    Grid
+        16x16 Grid
+            Generated in JavaScript
+            HTML Scheme
+                float/clear
+                inline-block
+                flexbox
+                CSS Grid
+        Hover Effect
+            Changes color of grid element as mouse passes over
+            Changing color 
+                Add class
+                Change style attribute
+        
