@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     min-width: 500px;
     min-height: 500px;
+    outline: solid 3px;
 }
 
 .row {
@@ -20,3 +21,6 @@ body {
     flex: 1;
 }
 
+.pixelFill {
+    background-color: black;
+}
