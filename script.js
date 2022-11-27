@@ -17,7 +17,7 @@ function createGrid(size) {
     }
 }
 
-createGrid(16);
+createGrid(50);
 
 // Sketch on hover
 pixels = document.querySelectorAll(".pixel");
@@ -25,5 +25,12 @@ pixels.forEach(pixel => pixel.addEventListener('mouseover', pixelFill ));
 
 function pixelFill(e) {
     e.target.classList.add("pixelFill");
-    console.log(e);
+}
+
+// Clear Pixels
+function clearContainer() {
+    const filled = document.querySelectorAll('.pixelFill');
+    for(elem of filled) {
+        elem.classList.remove('pixelFill');
+    }
 }

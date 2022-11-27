@@ -24,3 +24,8 @@ body {
 .pixelFill {
     background-color: black;
 }
+
+button {
+    padding: 5px;
+    margin: 10px;
+}
