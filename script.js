@@ -15,22 +15,35 @@ function createGrid(size) {
             row.appendChild(pixel);
         }
     }
+        // Sketch on hover
+    pixels = document.querySelectorAll(".pixel");
+    pixels.forEach(pixel => pixel.addEventListener('mouseover', pixelFill ));
+    }
+
+function removeGrid() {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild)
+    }
 }
 
 createGrid(50);
 
-// Sketch on hover
-pixels = document.querySelectorAll(".pixel");
-pixels.forEach(pixel => pixel.addEventListener('mouseover', pixelFill ));
 
 function pixelFill(e) {
     e.target.classList.add("pixelFill");
 }
 
 // Clear Pixels
-function clearContainer() {
+function clearPixels() {
     const filled = document.querySelectorAll('.pixelFill');
     for(elem of filled) {
         elem.classList.remove('pixelFill');
     }
+}
+
+// Resize pixels
+function resizePixels() {
+    let gridSize = prompt("Number of pixels per side? (Max: 100)");
+    removeGrid();
+    createGrid(gridSize);
 }
